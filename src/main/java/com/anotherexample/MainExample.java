@@ -6,9 +6,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainExample {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("emp.xml");
-        Employee employee= context.getBean("emp", Employee.class);
-        employee.display();
+        Employee employee1= context.getBean("emp", Employee.class);
+        employee1.display();
 
+        Employee employee2= context.getBean("emp", Employee.class);
+        employee2.setDepartment("HR");
+        employee2.setEmail("asd@gmail.com");
+        employee2.display();
 
 
     }
