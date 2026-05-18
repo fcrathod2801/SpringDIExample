@@ -8,4 +8,10 @@
     <bean id="emp1" class="com.bean.life.Emp1">
         <property name="name" value="Avinash Shankar Rathod"/>
     </bean>
+
+    <!-- Bean ID -->
+    <bean id="engine" class="com.anotherexample.autowired.Engine"/>
+    <!-- Autowire byName -->
+    <bean id="car" class="com.anotherexample.autowired.Car"  autowire="byName"/>
+
 </beans>
