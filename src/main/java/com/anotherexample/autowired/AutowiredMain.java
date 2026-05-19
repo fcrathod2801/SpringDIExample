@@ -8,7 +8,7 @@ public class AutowiredMain {
     public static void main(String[] args){
         ApplicationContext context = new ClassPathXmlApplicationContext("emp1.xml");
         Car car= context.getBean("car", Car.class);
-        
+
         car.setEngine(context.getBean("engine", Engine.class));
 
     }
